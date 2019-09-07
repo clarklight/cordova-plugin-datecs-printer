@@ -17,6 +17,7 @@ public class DatecsPrinter extends CordovaPlugin {
 				disconnect,
 				feedPaper,
 				printText,
+		                printTextnew,
 				getStatus,
 				getTemperature,
 				setBarcode,
