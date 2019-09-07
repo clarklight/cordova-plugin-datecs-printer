@@ -422,6 +422,27 @@ public class DatecsSDKWrapper {
         }
     }
 
+    
+        /**
+     * Print text expecting markup formatting tags (default encoding is ISO-8859-1)
+     *
+     * @param text
+     */
+    public void printTaggedTextnew(String text) {
+        printTaggedText(text, "GB18030");
+    }
+
+
+
+    public void printTaggedTextnew(String text, String charset) {
+        try {
+            mPrinter.printTaggedTextnew(text, charset);
+            mPrinter.flush();
+            mCallbackContext.success();
+        } catch (Exception e) {
+            mCallbackContext.error(this.getErrorByCode(5, e));
+        }
+    }
     /**
      * Converts HEX String into byte array and write
      *
