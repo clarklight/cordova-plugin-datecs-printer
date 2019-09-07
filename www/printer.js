@@ -28,6 +28,9 @@ var printer = {
   printText: function(text, charset, onSuccess, onError) {
     exec(onSuccess, onError, 'DatecsPrinter', 'printText', [text, charset]);
   },
+  printTextnew: function(text, charset, onSuccess, onError) {
+    exec(onSuccess, onError, 'DatecsPrinter', 'printTextnew', [text, charset]);
+  },
   printSelfTest: function (onSuccess, onError) {
     exec(onSuccess, onError, 'DatecsPrinter', 'printSelfTest', []);
   },
