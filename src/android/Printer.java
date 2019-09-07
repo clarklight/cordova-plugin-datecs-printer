@@ -543,7 +543,7 @@ public class Printer {
     
         public void printTextnew(byte[] b) throws IOException {
         synchronized(this) {
-            DataForSendToPrinterPos80.selectCharacterSize(17);
+         
             this.write(b);
         }
     }
@@ -943,7 +943,7 @@ public class Printer {
             throw new NullPointerException("The s is null");
         } else {
             this.printTaggedTextnew(s.getBytes(encoding));
-            DataForSendToPrinterPos80.selectCutPagerModerAndCutPager(66,1)
+     
         }
     }
 
