@@ -17,7 +17,6 @@ public class DatecsPrinter extends CordovaPlugin {
 				disconnect,
 				feedPaper,
 				printText,
-		                printTextnew,
 				getStatus,
 				getTemperature,
 				setBarcode,
@@ -76,11 +75,6 @@ public class DatecsPrinter extends CordovaPlugin {
 				String charset = args.getString(1);
 				printer.printTaggedText(text, charset);
 				break;
-                        case printTextnew:
-                                String text = args.getString(0);
-                                String charset = args.getString(1);
-                                printer.printTaggedTextnew(text, charset);
-                                break;
 			case getStatus:
 				printer.getStatus();
 				break;
